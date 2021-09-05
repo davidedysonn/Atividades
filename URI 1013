@@ -1,0 +1,25 @@
+//URI 1013
+
+using System;
+namespace Teste
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int idadePessoa = int.Parse(Console.ReadLine());
+            int ano = idadePessoa / 365;
+            int mes = idadePessoa % 365 / 30;
+            int dia = ((idadePessoa / 365) * 365) % 30;
+
+            Console.WriteLine(ano + " ano (s)");
+            Console.WriteLine(mes + " mes (es)");
+            Console.WriteLine(dia + " dia (s)");
+
+            Console.WriteLine();
+        }
+    }
+
+
+}
